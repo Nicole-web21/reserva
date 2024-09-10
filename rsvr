@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva da viagem</title>  
+<link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <h1>Reserva</h1>
+    <form id="reservaForm">
+    
+<input type="text" id="nome" placeholder= "Digite seu nome completo" required> <p></p>
+<input type="time" id="horario" required> <p></p>
+<input type="date" placeholder= "DD/MM/AAAA" required> <p></p>
+<select>
+    <select id="origem" required>
+        <option value="">Cidade de origem</option>
+    <option value="Belo Horizonte">Belo Horizonte</option> 
+    <option value="Rio de Janeiro">Rio de Janeiro</option> 
+    <option value="Recife">Recife</option> 
+    <option value="Salvador">Salvador</option> 
+    <option value="Fortaleza">Fortaleza</option> 
+</select>
+<select>
+    <select id="destino" required>
+        <option value="">Destino da viagem</option>
+    <option value="Belo Horizonte">Belo Horizonte</option> 
+    <option value="Rio de Janeiro">Rio de Janeiro </option> 
+    <option value="Recife">Recife</option> 
+    <option value="Salvador">Salvador</option> 
+    <option value="Fortaleza">Fortaleza</option> 
+</select>
+<p>
+<input id="botao" type="submit">
+</p>
+<div id="mensagem"></div>
+
+</form>
+
+</body>
+</html>
