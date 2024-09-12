@@ -1,0 +1,22 @@
+ocument.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('reservaForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const data = document.getElementById('data').value;
+        const horario = document.getElementById('horario').value;
+        const origem = document.getElementById('origem').value;
+        const destino = document.getElementById('destino').value;
+        
+        const mensagem = `
+            <h3>Reserva feita!</h3>
+            <p><strong>Nome:</strong> ${nome}</p>
+            <p><strong>Data da viagem:</strong> ${data}</p>
+            <p><strong>Horário da viagem:</strong> ${horario}</p>
+            <p><strong>Origem:</strong> ${origem}</p>
+            <p><strong>Destino:</strong> ${destino}</p>
+        `;
+        
+        document.getElementById('mensagem').innerHTML = mensagem;
+    })
+});
